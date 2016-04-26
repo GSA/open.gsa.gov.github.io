@@ -6,9 +6,9 @@
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <header class="notepad-site-head">
-    <div class="notepad-site-head-menu">
-        <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
-        
+    {% include nav.html %}
+    <!-- <div class="notepad-site-head-menu">
+        <a class="notepad-blog-logo" style="margin-left: 15px" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
         
         <div class="notepad-blog-menu">      
     <div class="notepad-mobile-menu show-for-small">
@@ -29,15 +29,18 @@
     </ul>
 </div>
         <div class="clearfix"></div>
-    </div>
+    </div> -->
     <div class="notepad-site-head-content" >
         <div class="notepad-site-head-bg"></div>
         <h1 class="notepad-blog-title">
-            <span class="notepad-site-head-title-bg">
+            <!-- <span class="notepad-site-head-title-bg">
                 {{ site.title }}
+            </span> -->
+            <span class="notepad-site-head-title-bg">
+                {{ site.description }}
             </span>
         </h1>
-        <h2 class="notepad-blog-description">{{ site.description }}</h2>
+        <!--<h2 class="notepad-blog-description">{{ site.description }}</h2>-->
     </div>
 </header>
 
@@ -45,6 +48,7 @@
 <main class="notepad-content" role="main">
 
             {{ content }}
+    <div class="clearfix"></div>
 </main>
     {% include footer.html %}
 

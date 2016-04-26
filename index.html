@@ -1,97 +1,88 @@
 ---
 layout: home
-title: BLOG
+title: 
 description: "GSA IT"
 headline: Nerds Feeder
 tags: [Amey, Jadiye, CodeInvemtory]
 ---
-{% if site.paginate %}
-	{% for post in paginator.posts %}
-    <article class="notepad-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="notepad-post-meta">
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    <span class="day">
-                        {{ post.date | date: "%d" }}
-                    </span>
-                    <span class="month-year">
-                        {{ post.date | date: "%B %Y" }}
-                    </span>
-                </time>
-            </span>
-        </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="notepad-post-header">
-                <h3 class="notepad-post-title">
-                    <a href="{{ site.url }}{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h3>
-            </header>
-            <section class="notepad-post-excerpt">
-                <p>{{ post.content | strip_html | truncatewords:40 }}</p>
-            </section>
-            
-                <div class="notepad-index-post-tags">
-                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-                    
-                </div>
-            
-        </div>
-    </article>
-	{% endfor %}
-    <nav class="pagination" role="navigation">
-    {% if paginator.previous_page %}
-	    {% if paginator.previous_page == 1 %}
-	    <a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> Newer</a>
-	    {% else %}
-	    <a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> Newer</a>
-	    {% endif %}
-	{% else %}
-    <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> Newer</span>
-    {% endif %}
 
-    
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    	{% if paginator.next_page %} 
-        <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">Older <i class="fa fa-chevron-right"></i></a>
-    	{% else %}
-    	<span class="older-posts faded">Older <i class="fa fa-chevron-right"></i></span>
-    	{% endif %}
-	</nav>
-{% else %}
-	{% for post in site.posts %}
-    <article class="notepad-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="notepad-post-meta">
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    <span class="day">
-                        {{ post.date | date: "%d" }}
-                    </span>
-                    <span class="month-year">
-                        {{ post.date | date: "%B %Y" }}
-                    </span>
-                </time>
-            </span>
+<div class="small-12 columns color-text-primary-darker">
+    <div class="row">
+        <header class="notepad-post-header">
+            <h1 class="notepad-post-title color-text-primary-darker">
+                <a href="/about">
+                    ABOUT US
+                </a>
+            </h1>
+        </header>
+        <div class="row">
+            <div class="small-12 medium-9 large-8 columns">
+                Sustainable artisan gochujang vice church-key kickstarter. Pitchfork meh kogi everyday carry, listicle austin master cleanse flannel sustainable. Tumblr trust fund affogato, waistcoat flexitarian pop-up godard vice viral try-hard brunch. DIY etsy beard leggings locavore. Asymmetrical gluten-free lomo whatever pabst, organic semiotics food truck. Vice thundercats bitters cred, DIY yuccie cronut next level mixtape gochujang. PBR&amp;B pour-over pickled forage, seitan blue bottle 3 wolf moon bitters portland gochujang.
+            </div>
+            <div class="small-12 medium-3 large-4 columns">
+                <button>Button 1</button>
+                <button>Button 2</button>
+                <button>Jobs</button>
+            </div>
         </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="notepad-post-header">
-                <h3 class="notepad-post-title">
-                    <a href="{{ site.url }}{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h3>
-            </header>
-            <section class="notepad-post-excerpt">
-                <p>{{ post.content | strip_html | truncatewords:100 }}</p>
-            </section>
-            
-                <div class="notepad-index-post-tags">
-                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-                    
+    </div>
+    <div class="row">&nbsp;</div>
+</div>
+<div class="small-12 columns color-primary-darker">
+    <div class="row">
+        <header class="notepad-post-header">
+            <h1 class="notepad-post-title color-text-white">
+                <a href="/events">
+                    GSA IT EVENTS
+                </a>
+            </h1>
+        </header>
+        <div class="row">
+            <div class="small-12 columns">
+                Sustainable artisan gochujang vice church-key kickstarter. Pitchfork meh kogi everyday carry, listicle austin master cleanse flannel sustainable. Tumblr trust fund affogato, waistcoat flexitarian pop-up godard vice viral try-hard brunch. DIY etsy beard leggings locavore. Asymmetrical gluten-free lomo whatever pabst, organic semiotics food truck. Vice thundercats bitters cred, DIY yuccie cronut next level mixtape gochujang. PBR&amp;B pour-over pickled forage, seitan blue bottle 3 wolf moon bitters portland gochujang.
+            </div>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+</div>
+<div class="small-12 columns color-primary-darkest">
+    <div class="row">
+        <header class="notepad-post-header">
+            <h1 class="notepad-post-title color-text-white">
+                <a href="/apis">
+                    DEVELOPER RESOURCES
+                </a>
+            </h1>
+        </header>
+        <div class="row">
+            <div class="small-12 medium-6 large-3 columns"> 
+                <h3 class="color-text-white">Featured API 1</h3>
+                <div>
+                    Sustainable artisan gochujang vice church-key kickstarter. Pitchfork meh kogi everyday carry, listicle austin master cleanse flannel sustainable. 
                 </div>
-            
-        </div>
-    </article>
-	{% endfor %}  
-{% endif %}
+            </div>
+            <div class="small-12 medium-6 large-3 columns"> 
+                <h3 class="color-text-white">Featured API 2</h3>
+                <div>
+                    Vice thundercats bitters cred, DIY yuccie cronut next level mixtape gochujang. PBR&amp;B pour-over pickled forage, seitan blue bottle 3 wolf moon bitters portland gochujang.
+                </div>
+            </div>
+            <div class="small-12 medium-6 large-3 columns"> 
+                <h3 class="color-text-white">Featured API 3</h3>
+                <div>
+                    DIY etsy beard leggings locavore. Asymmetrical gluten-free lomo whatever pabst, organic semiotics food truck. 
+                </div>
+            </div>
+            <div class="small-12 medium-6 large-3 columns"> 
+                <h3 class="color-text-white">Featured API 4</h3>
+                <div>
+                    Tumblr trust fund affogato, waistcoat flexitarian pop-up godard vice viral try-hard brunch. 
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="row">&nbsp;</div>
+</div>
+
+
+

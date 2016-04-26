@@ -1068,3 +1068,67 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+
+/* 508 compliant styles from US Web Design Standards
+https://playbook.cio.gov/designstandards/visual-style/#palette
+*/
+.color-text-white {
+  color: #fff;
+}
+.color-text-white a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.color-text-black a {
+  color: #000;
+}
+.color-text-primary-darker {
+  color: #205493;
+}
+.color-text-primary-darker a {
+  text-decoration: none;
+  color: #205493;
+}
+
+.color-text-secondary-darkest {
+  color: #981b1e;
+}
+.color-text-secondary-darkest a {
+  text-decoration: none;
+  color: #981b1e;
+}
+
+.color-green {
+  background-color: #2e8540
+}
+.color-white {
+  background-color: #ffffff;
+}
+.color-primary {
+  background-color: #0071bc;
+  color: #ffffff;
+}
+
+.color-primary-darker {
+  background-color: #205493;
+  color: #ffffff;
+}
+
+.color-primary-darkest {
+  background-color: #112e51;
+  color: #ffffff;
+}
+.color-base {
+  background-color: #212121;
+}
+.color-secondary-dark {
+  background-color: #cd2026;
+}
+.color-secondary-darkest {
+  background-color: #981b1e;
+}
+.color-cool-blue-lighter {
+  background-color: #8ba6ca;
+}
