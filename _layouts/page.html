@@ -3,13 +3,13 @@
 <head>
 {% include head.html %}
 </head>
-<body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
+<body class="" itemscope itemtype="http://schema.org/WebPage">
 
-<main id="notepad-page-container" class="notepad-page-container" role="main">
-    
-    
-        <header class="notepad-page-header">
-            <div class="notepad-page-menu-header">
+<!-- <main  role="main"> -->
+
+        <header class="notepad-site-head">
+            {% include nav.html %}
+            <!-- <div class="notepad-page-menu-header">
                 
                     <a class="notepad-blog-logo" href="{{ site.url }}">
                         <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo">
@@ -35,7 +35,7 @@
            <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
     </ul>
 </div>
-            </div>
+            </div> -->
             <div class="notepad-page-title row">
                 <div class="small-12 columns">
                     <h1>{{ page.title }}</h1>
@@ -48,7 +48,7 @@
 </article>
         <div class="cf"></div>
     {% include footer.html %}
-</main>
+<!-- </main> -->
 
 {% include scripts.html %}  
 </body>
