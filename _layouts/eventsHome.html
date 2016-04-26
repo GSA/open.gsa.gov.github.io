@@ -3,8 +3,11 @@
   <head>
     {% include head.html %}
   </head>
-  <body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
-    {% if page.imagefeature %}
+  <body  itemscope itemtype="http://schema.org/WebPage">  
+    <header class="notepad-site-head">
+    {% include nav.html %}
+  </header>
+<!--     {% if page.imagefeature %}
       <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
         <header class="notepad-post-header">
           <div class="bg-img"></div>
@@ -41,7 +44,7 @@
           </li>
       </ul>
   </div>
-              </div>
+              </div> -->
   {% if page.imagefeature %}
               <div class="notepad-post-title bg-check">
                   <h1>{{ page.title }}</h1>
