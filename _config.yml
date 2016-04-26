@@ -1,6 +1,6 @@
-title:            Open.GSA.gov
-description:      "GSA Open Technology"
-logo:             logo.png
+title:            GSA IT
+description:      "Providing the tools and data to promote transparency and reuse."
+logo:             logo.jpg
 # disqus_shortname: codeinventorycom
 share:            true
 dropcap:     true
@@ -37,12 +37,13 @@ links:
     url: /
     external: false
     icon: home
+  - title: About
+    url: /about
   - title: Events
     url: /events
   - title: APIs
     url: /apis
-  - title: About
-    url: /about
+
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
